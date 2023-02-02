@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  exchange:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: exchange
+    hostname: host-exchange
+    restart: always
+    ports:
+      - 8080:8080
